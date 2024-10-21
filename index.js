@@ -8,9 +8,8 @@ const PORT = process.env.PORT || 8080;
 
 // Gemini variables
 const { GoogleGenerativeAI } = require("@google/generative-ai");
-const genAI = new GoogleGenerativeAI(process.env.API_KEY);
+const genAI = new GoogleGenerativeAI(process.env.API_KEY2);
 const DEFAULT_MODEL = "gemini-1.5-flash"; //https://ai.google.dev/gemini-api/docs/models/gemini
-
 
 const callGemini = async (geminiModel, prompt, generationConfig) => {
   const modelConfig = {
